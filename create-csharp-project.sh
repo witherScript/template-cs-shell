@@ -24,5 +24,9 @@ cd ..
 git init
 read -p "Enter remote repo url: " repo_url
 git remote add gs "${repo_url}"
-git commit -m "template repo boilerplate"
+
+touch .gitignore
+echo -e "obj\nbin" >> .gitignore
+git add .gitignore
+git commit -m "add gitignore"
 git push gs main
