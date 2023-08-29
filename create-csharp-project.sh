@@ -19,9 +19,10 @@ mkdir "${project_title}.Tests"
 cd "${project_title}.Tests"
 dotnet new mstest
 mkdir ModelsTests
+
 cd ..
 git init
-
 read -p "Enter remote repo url: " repo_url
 git remote add gs "${repo_url}"
-
+git commit -m "template repo boilerplate"
+git push gs main
