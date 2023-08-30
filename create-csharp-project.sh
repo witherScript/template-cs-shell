@@ -23,7 +23,8 @@ mkdir ModelsTests
 cd ..
 git init
 read -p "Enter remote repo url: " repo_url
-git remote add gs "${repo_url}"
+read -p "Enter remote alias: " repo_alias
+git remote add "${repo_alias}" "${repo_url}"
 
 touch .gitignore
 echo -e "obj\nbin" >> .gitignore
