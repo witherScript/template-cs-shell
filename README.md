@@ -37,7 +37,16 @@ $ cd folder_containing_shell_file
 $ new_proj
 $ Enter Project Title: FizzBuzz
 $ Enter Remote Repo URL: <url_to_remote>
+$ Enter Remote Alias: gs
 ```
+The "Remote Alias" will determine what our git push commands look like.
+
+In the example code snippet above, we set the alias to gs, so our pushes are as such:
+
+```bash
+$ git push gs main
+```
+
 
 **NOTE: this should automate file system up to the first gitignore commit
 
