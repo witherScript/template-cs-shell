@@ -1,7 +1,7 @@
 # template-cs-shell
 a bash shell script for automating C# file structure focused on TDD
 
-### Steps to Use this Automation tool:
+# Quick Start Steps
 1. **Clone this repo** to your projects folder
 
 ```bash
