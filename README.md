@@ -13,12 +13,11 @@ $ git clone https://github.com/witherScript/template-cs-shell
 chmod +x new-from-template.sh
 ```
 
-3. The chmod command makes our .sh file executable, the next step is to **add an alias** to our terminal config gile so we don't have to manually execute it
+3. The chmod command makes our .sh file executable, the next step is to **add an alias** to our terminal config file so we don't have to manually execute it
 ```bash
 $ cd
 ```
-
-## Editing your shell profile
+### How to create a custom alias by editing your shell profile
 
 Confused about which .*rc file you should edit? enter the following command:
 ```bash
