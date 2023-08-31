@@ -23,9 +23,9 @@ Confused about which .*rc file you should edit? enter the following command:
 ```bash
 which $SHELL
 ```
-- If the output is **usr/bin/zsh**: edit the **.zshrc** file in your _~ directory_, or create one if you don't have a .zshrc file already
+- If the output is **usr/bin/zsh**: edit the **.zshrc** file in your ~ directory, or create one if you don't have a .zshrc file already
 
-- If the output is **usr/bin/bash**: edit the **.bashrc** file in your _~ directory_, or create one if you don't already see it 
+- If the output is **usr/bin/bash**: edit the **.bashrc** file in your ~ directory, or create one if you don't already see it 
 after running ```bash $ ls -a```
 
 - Now **open .zshrc or  .bashrc in the editor or IDE** of your choice, the following command opens .zshrc in VSCode
