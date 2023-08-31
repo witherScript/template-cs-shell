@@ -10,7 +10,7 @@ $ git clone https://github.com/witherScript/template-cs-shell
 2. **Navigate to directory** where **create-csharp-project.sh** is located and run the following command:
 
 ```bash
-chmod +x new-from-template.sh
+chmod +x create-csharp-project.sh
 ```
 
 3. The chmod command makes our .sh file executable, the next step is to **add an alias** to our terminal config file so we don't have to manually execute it
