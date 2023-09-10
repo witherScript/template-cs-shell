@@ -10,15 +10,31 @@ cd "${project_title}.Solution"
 # Create the main project folder
 mkdir "$project_title"
 cd "$project_title"
-dotnet new console
 mkdir Models
+mkdir Controllers
+mkdir Views
+mkdir Properties
+
+cd Properties
+touch launchSettings.json
+export launchSettings=$(cat "./template-netrouter/launchSettings.json")
+echo -e "${launchSettings}" >> launchSettings.json
 cd ..
+
+touch Program.cs
+export programTemplate=$(cat "./template-netrouter/ProgramTemplate.cs")
+echo -e "${programTemplate}" >> Program.cs
+
+touch "${project_title}.csproj"
+export projTemplate=$(cat "./template-netrouter/ConfigTemplate.csproj")
+echo -e "${projTemplate}" >> "${project_title}.csproj"
+
 
 # Create the Tests folder
 mkdir "${project_title}.Tests"
 cd "${project_title}.Tests"
 dotnet new mstest
-mkdir ModelsTests
+mkdir ModelTests
 
 cd ..
 git init
@@ -30,4 +46,4 @@ touch .gitignore
 echo -e "obj\nbin" >> .gitignore
 git add .gitignore
 git commit -m "add gitignore"
-git push gs main
+git push "${repo_alias}" main
